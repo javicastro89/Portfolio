@@ -22,18 +22,20 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
-body { background: #0f0f0f; }
+body { background: #0f0f0f;}
+
 
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
 
 header {
+   
    position: relative;
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/header-background.jpg) no-repeat top center;
+   background: #161415 url(../images/header-background.jpg) no-repeat top center ;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -65,15 +67,18 @@ header .banner-text h1 {
    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
 }
 header .banner-text h3 {
-   font: 18px/1.9em 'librebaskerville-regular', serif;
-   color: #A8A8A8;
+   font: 20px/1.9em 'librebaskerville-regular', serif;
+   color: hsl(14, 94%, 68%);
    margin: 0 auto;
    width: 70%;
-   text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+   text-shadow: 0px 1px 13px rgba(0, 0, 0, 0.972);
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
-   color: #fff;
+   color: rgb(255, 255, 255);
+   /* text-shadow:  #000 3px 1px 4px; */
+   /* text-shadow: 1px 1px 2px black, 0 0 1em rgb(210, 210, 216), 0 0 0.2em rgb(114, 112, 112); */
+
 }
 header .banner-text hr {
    width: 60%;
@@ -169,7 +174,7 @@ ul#nav li a {
    line-height: 32px;
 	text-decoration: none;
    text-align: left;
-   color: #fff;
+   color: hsl(14, 89%, 63%);
 
 	-webkit-transition: color .2s ease-in-out;
 	-moz-transition: color .2s ease-in-out;
@@ -179,9 +184,11 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #F06000; }
+ul#nav li.current a { color: hsl(14, 92%, 74%); }
 
-
+ul#nav li a:hover{
+   color: hsl(14, 100%, 50%);
+}
 /* ------------------------------------------------------------------ */
 /* c. About Section
 /* ------------------------------------------------------------------ */
@@ -284,13 +291,251 @@ ul#nav li.current a { color: #F06000; }
 /*----------------------------------------------*/
 /*	Skill Bars
 /*----------------------------------------------*/
+.skills{
+   display: flex;
+   justify-content: space-between ;
 
-.bars {
-	width: 95%;
-	float: left;
-	padding: 0;
-	text-align: left;
 }
+/* 80/125 */
+.html-div{
+width: 155px;
+height: 135px;
+text-align: center;
+}
+.html-img{
+   width: 80px;
+   height:80px;
+   transition: transform 2s;
+   /* overflow:hidden; */
+}
+.html-txt{
+   font-family: monospace;
+   color: #eb8245;
+   font-size: 30px;
+   background-color: none;
+   text-align: center;
+   /* transition: transform 1500ms; */
+   /* overflow:hidden; */
+}
+
+
+.css-div{
+   width: 155px;
+   height: 135px;
+   text-align: center;
+}
+.css-img{
+   width: 80px;
+   height:90   px;
+   transition: transform 2s;
+}
+
+.css-text{
+   font-family: monospace;
+   color: #2c6de6;
+   font-size: 30px;
+   background-color: none;
+   text-align: center;
+}
+
+.js-div{
+   width: 165px;
+   height: 135px;
+   text-align: center;
+}
+.js-img{
+   width: 80px;
+   height:80px;
+   /* margin-left: 0px; */
+   /* transition: transform 2s; */
+}
+
+
+.js-text{
+   font-family: monospace;
+   color: #e2cd13;
+   text-shadow: #000;
+   font-size: 30px;
+   background-color: none;
+   text-align: center;
+}
+/* 85//42 */
+.hover{
+   transition: transform 1s;
+}
+.hover:hover{
+   background-color: rgba(189, 189, 190, 0.561);
+   border: 2px solid rgba(0, 0, 0, 0.335);
+   /* border-bottom: 1px solid rgb(93, 93, 93); */
+   border-radius: 5px;
+   /* background-color: rgb(167, 166, 166); */
+   /* -webkit-transform:scale(1.3); */
+   transform: scale(1.1);
+   transition: 1000ms;
+   /* transform: translate(); */
+}
+
+.skillss{
+   display: flex;
+   
+   justify-content: space-between ;
+   display: grid;
+   grid-template-columns: repeat(3,250px);
+   grid-template-rows: repeat(2,225px);
+}
+.text-lad{
+   font-size: 20px;
+}
+
+.lat{
+   margin-top: 5px;
+}
+.tit{
+   margin-left: -30px;
+}
+/* .frameworks {
+   display: grid;
+   grid-template-columns: repeat(3,250px);
+   grid-template-rows: repeat(2,225px);
+} */
+.react-img{
+   width: 100px;
+   height:90px;
+}
+
+
+.react-text{
+   font-family: monospace;
+   color: #2698da;
+   font-size: 30px;
+   background-color: none;
+   text-align: center;
+   
+}
+.div-react{
+   width: 195px;
+   height: 155px;
+   text-align: center;
+   transition: transform 1s;
+}
+
+
+
+
+.div-redux{
+   width: 195px;
+   height: 155px;
+   text-align: center;
+   transition: transform 1s;
+}
+
+.redux-text{
+   font-family: monospace;
+   color: #5a45bb;
+   font-size: 30px;
+   background-color: none;
+   text-align: center;
+}
+
+
+.redux-img{
+   width: 100px;
+   height:90px;
+}
+
+
+/* ------------------------------------------ */
+
+.div-express{
+   width: 195px;
+   height: 155px;
+   text-align: center;
+   transition: transform 1s;
+}
+
+.express-text{
+   font-family: monospace;
+   color: #37b318;
+   font-size: 30px;
+   background-color: none;
+   text-align: center;
+}
+
+
+.express-img{
+   width: 190px;
+   height:80px;
+}
+
+/* ---------------------------------------------- */
+.sequalize{
+   /* display: grid; */
+   margin-top: -50px;
+   grid-column: 2/3;
+   grid-row: 2/3;
+}
+.div-sequalize{
+   width: 195px;
+   height: 155px;
+   text-align: center;
+   transition: transform 1s;
+}
+
+.sequalize-text{
+   color: #313131;
+   font-size: 30px;
+   background-color: none;
+   text-align: center;
+}
+
+
+.sequalize-img{
+   width: 170px;
+   height:150px;
+}
+
+
+
+
+
+
+
+.div-sequalize:hover{
+   border: 2px solid rgba(0, 0, 0, 0.335);
+   /* border-bottom: 1px solid rgb(93, 93, 93); */
+   border-radius: 5px;
+   /* background-color: rgb(167, 166, 166); */
+   /* -webkit-transform:scale(1.3); */
+   transform: scale(1.1);
+   transition: 1000ms;
+}
+
+
+
+.hoverf:hover{
+   background-color: rgba(189, 189, 190, 0.561);
+   border: 2px solid rgba(0, 0, 0, 0.335);
+   /* border-bottom: 1px solid rgb(93, 93, 93); */
+   border-radius: 5px;
+   /* background-color: rgb(167, 166, 166); */
+   /* -webkit-transform:scale(1.3); */
+   transform: scale(1.1);
+   transition: 1000ms;
+   /* transform: translate(); */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .bars .skills {
   	margin-top: 36px;
    list-style: none;
@@ -298,13 +543,13 @@ ul#nav li.current a { color: #F06000; }
 .bars li {
    position: relative;
   	margin-bottom: 60px;
-  	background: #ccc;
+  	/* background: #ccc; */
   	height: 42px;
   	border-radius: 3px;
 }
 .bars li em {
 	font: 15px 'opensans-bold', sans-serif;
-   color: #313131;
+   /* color: #313131; */
 	text-transform: uppercase;
    letter-spacing: 2px;
 	font-weight: normal;

@@ -3,7 +3,7 @@ import React from "react";
 const About = ({ data }) => {
   if (data) {
     var name = data.name;
-    var profilepic = "images/" + data.image;
+    var profilepic = "images/profilepic.png";
     var bio = data.bio;
     var street = data.address.street;
     var city = data.address.city;
@@ -25,12 +25,12 @@ const About = ({ data }) => {
           />
         </div>
         <div className="nine columns main-col">
-          <h2>About Me</h2>
+          <h2>Sobre mi</h2>
 
           <p>{bio}</p>
           <div className="row">
             <div className="columns contact-details">
-              <h2>Contact Details</h2>
+              <h2>Contacto</h2>
               <p className="address">
                 <span>{name}</span>
                 <br />

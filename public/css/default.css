@@ -56,6 +56,8 @@ time, mark, audio, video {
    font-size: 100%;
    vertical-align: baseline;
    background: transparent;
+   /* color: rgba(101, 137, 235, 0.883); */
+   /* text-shadow: 20px 13px 20px  rgba(0, 0, 0, 0.493); */
 }
 
 article,aside,details,figcaption,figure,
@@ -148,7 +150,7 @@ body {
    font-size: 15px;
    line-height: 30px;
 	color: #838C95;
-
+   
    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
 }

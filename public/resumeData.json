@@ -18,40 +18,25 @@
     "resumedownload": "http://papareact.com",
     "social": [
       {
-        "name": "youtube",
-        "url": "https://www.youtube.com/channel/UCqeTj_QAnNlmt7FwzNwHZnA",
-        "className": "fa fa-youtube"
-      },
-      {
-        "name": "facebook",
-        "url": "https://www.facebook.com/sonny.sangha.3",
-        "className": "fa fa-facebook"
-      },
-      {
         "name": "linkedin",
-        "url": "https://www.linkedin.com/in/saajansangha",
+        "url": "https://www.linkedin.com/in/sebastian-torres-5b43801a6/",
         "className": "fa fa-linkedin"
       },
       {
-        "name": "instagram",
-        "url": "https://www.instagram.com/ssssangha/",
-        "className": "fa fa-instagram"
-      },
-      {
         "name": "github",
-        "url": "https://github.com/PapaReact",
+        "url": "https://github.com/SebastianTorres00",
         "className": "fa fa-github"
       }
     ]
   },
   "resume": {
-    "skillmessage": "My Programming Language Proficiency",
+    "skillmessage": "Los lenguajes que se utilizar",
     "education": [
       {
-        "school": "University of Kent - UK",
-        "degree": "Bachelor's Degree, Computer Science",
-        "graduated": "July 2016",
-        "description": "Graduated with First Class Honours"
+        "school": "Soy Henry",
+        "degree": "Full Stack Developer",
+        "graduated": "Agosto 2021",
+        "description": "+700 Horas en base a practicas y proyectos reales"
       }
     ],
     "work": [
@@ -64,24 +49,13 @@
     ],
     "skills": [
       {
-        "name": "ReactJs",
-        "level": "100%"
+        "name": "ReactJs"
       },
       {
-        "name": "Python",
-        "level": "85%"
+        "name": "JavaScript"
       },
       {
-        "name": "Git",
-        "level": "70%"
-      },
-      {
-        "name": "JavaScript",
-        "level": "99%"
-      },
-      {
-        "name": "Web Development",
-        "level": "95%"
+        "name": "HTML"
       }
     ]
   },
